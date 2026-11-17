@@ -717,7 +717,7 @@ try {
   console.log('تم تجهيز قاعدة البيانات');
   console.log(storageEnabled
     ? 'التخزين: Cloudflare R2'
-    : 'التخزين: داخل قاعدة البيانات (وضع التطوير، غير مسموح في الإنتاج)');
+    : 'التخزين: الصور داخل قاعدة البيانات (بدون R2)');
 } catch (err) {
   console.error('فشل تجهيز قاعدة البيانات:', err.message);
   process.exit(1);
